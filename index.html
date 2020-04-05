@@ -5,7 +5,18 @@
    </head>
   <body>
     <h1>&lt;Canvas&gt; 사용예 (과제 #03-02)</h1>
-    <canvas id="canavas" width="200" height="150"></canvas>
+      <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+        <script>
+          var c = document.getElementById("myCanvas");
+          var ctx = c.getContext("2d");
+          ctx.moveTo(0,0);
+          ctx.lineTo(200,100);
+          ctx.stroke();
+
+          ctx.moveTo(200,0);
+          ctx.lineTo(0,100);
+          ctx.stroke();
+        </script>
    </body>
   </head>
 </html>
